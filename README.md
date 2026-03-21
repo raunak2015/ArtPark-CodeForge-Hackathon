@@ -1,170 +1,204 @@
-# 🚀 SkillPath AI  
-### Turning Resumes into Intelligent Learning Journeys
+<div align="center">
+
+# 🚀 SkillPath AI: Adaptive Onboarding Engine
+
+<img src="https://readme-typing-svg.herokuapp.com?font=Orbitron&size=30&duration=3000&color=00F7FF&center=true&vCenter=true&width=900&lines=AI+Powered+Personalized+Onboarding;Skill+Gap+Detection+Engine;Adaptive+Learning+Path+Generator" />
 
 ---
 
-![GitHub stars](https://img.shields.io/github/stars/raunak2015/ArtPark-CodeForge-Hackathon?style=for-the-badge)
-![GitHub forks](https://img.shields.io/github/forks/raunak2015/ArtPark-CodeForge-Hackathon?style=for-the-badge)
-![GitHub issues](https://img.shields.io/github/issues/raunak2015/ArtPark-CodeForge-Hackathon?style=for-the-badge)
-![License](https://img.shields.io/badge/license-MIT-blue?style=for-the-badge)
+### 🎯 Next-Gen Career Intelligence Platform
 
-![React](https://img.shields.io/badge/Frontend-React-blue?style=for-the-badge&logo=react)
-![Node.js](https://img.shields.io/badge/Backend-Node.js-green?style=for-the-badge&logo=node.js)
-![AI](https://img.shields.io/badge/AI-LLM%20%2B%20Embeddings-purple?style=for-the-badge)
-![Database](https://img.shields.io/badge/Database-MongoDB-green?style=for-the-badge&logo=mongodb)
-![Tailwind](https://img.shields.io/badge/UI-TailwindCSS-38B2AC?style=for-the-badge&logo=tailwind-css)
+<p align="center">
+  <img src="https://img.shields.io/badge/AI-Powered-00F7FF?style=for-the-badge&logo=openai&logoColor=white" />
+  <img src="https://img.shields.io/badge/Frontend-React.js-61DAFB?style=for-the-badge&logo=react&logoColor=black" />
+  <img src="https://img.shields.io/badge/Backend-Hono.js-E36002?style=for-the-badge&logo=hono&logoColor=white" />
+  <img src="https://img.shields.io/badge/AI_Engine-Groq_Cloud-f55036?style=for-the-badge&logo=groq&logoColor=white" />
+</p>
 
----
-
-## 🧠 Overview
-
-In today’s competitive job market, candidates struggle to identify the gap between their current skills and job requirements.
-
-**SkillPath AI** solves this by:
-- Analyzing resumes and job descriptions
-- Detecting skill gaps using AI
-- Generating personalized learning roadmaps
-
-> 🚀 From confusion → clarity → job readiness
+<p align="center">
+  <img src="https://img.shields.io/github/stars/raunak2015/ArtPark-CodeForge-Hackathon?style=for-the-badge&color=orange" />
+  <img src="https://img.shields.io/github/forks/raunak2015/ArtPark-CodeForge-Hackathon?style=for-the-badge&color=blue" />
+  <img src="https://img.shields.io/github/issues/raunak2015/ArtPark-CodeForge-Hackathon?style=for-the-badge&color=red" />
+</p>
 
 ---
 
-## ✨ Features
+💡 *From Confusion → Clarity → Job Readiness with SkillPath AI*
 
-### 🔍 Intelligent Resume Analysis
-- NLP-based resume parsing
-- Extracts skills, experience, education
-
-### 🎯 Skill Gap Detection
-- Semantic matching (NOT keyword-based)
-- Identifies missing & weak skills
-
-### 🧠 Adaptive Learning Engine
-- Graph-based roadmap generation
-- Dependency-aware skill sequencing
-- Personalized timelines (e.g., 3 weeks)
-
-### 📊 Smart Dashboard
-- Skill match score (e.g., 87%)
-- Missing skills tracking
-- Role readiness percentage
-- Progress analytics
-
-### 🤖 AI Assistant
-- Real-time guidance
-- Career suggestions
+</div>
 
 ---
 
-## 🏗️ System Architecture
+# 🌌 Problem
+
+> 🚨 Traditional onboarding and skill assessment are inefficient and outdated
+
+* ⏳ Experienced hires waste time on basics
+* 😵 Beginners get overwhelmed by complex topics
+* 📉 Productivity drops during the transition
+* ❌ Lack of personalization in learning paths
+
+---
+
+# 💡 Solution
+
+🚀 **SkillPath AI is an adaptive engine that learns about the user before teaching them.**
+
+✔ Intelligent Resume + Job Description Parsing
+✔ Precise Skill Gap Detection (Powered by Groq/Llama 3.3)
+✔ Dynamic & Adaptive Learning Roadmap
+✔ Real-time Career AI Coaching
+
+---
+
+# 🧠 How It Works
+
+```mermaid
+flowchart TD
+A[Upload Resume] --> B[Upload Job Description]
+B --> C[LLM Skill Extraction]
+C --> D[Embedding Similarities]
+D --> E[Skill Gap Detection]
+E --> F[AI Roadmap Engine]
+F --> G[Personalized Learning Path]
+```
+
+---
+
+# ⚙️ Features
+
+## 🔍 Intelligence Layer
+
+* **Resume Analysis:** Uses LLM (Llama 3.3) to extract structured skills, experience, and education.
+* **JD Breakdown:** Categorizes job requirements into Critical vs High priority competencies.
+* **Semantic Matching:** Understands deep skill relationships using high-accuracy embedding logic.
+
+## 🤖 AI Engine (Groq Cloud)
+
+* **Skill Gap Insight:** Pinpoints exact missing skills with explanation.
+* **Roadmap Optimization:** Prioritizes learning based on role importance and difficulty.
+* **AI Career Coach:** Interactive AI chat for personalized career guidance.
+
+## 🎨 User Experience
+
+* **Modern Dashboard:** Visualizes readiness scores and analytics.
+* **Adaptive Roadmaps:** Dependency-aware skill sequencing with durations.
+* **Progress Reports:** Real-time feedback on role readiness.
+
+---
+
+# 🏗️ System Architecture
 
 ```mermaid
 flowchart LR
-    A[Resume Upload] --> B[Resume Parsing]
-    B --> C[Skill Extraction]
-    C --> D[Job Description Analysis]
-    D --> E[Skill Gap Engine]
-    E --> F[Adaptive Roadmap Generator]
-    F --> G[Dashboard + AI Assistant]
+    User[Browser / Client] -->|React/Tailwind| HonoServer[Hono Web Server]
+    HonoServer -->|API Calls / LLM Prompts| GroqAPI[Groq AI API (Llama 3.3)]
+    GroqAPI -->|Structured JSON| HonoServer
+    HonoServer -->|SSR / Hybrid Rendering| User
+    Runtime[Cloudflare Workers / Pages] -.-> HonoServer
 ```
----
-
-## ⚙️ Tech Stack
-### 🖥️ Frontend
-- React.js
-- Tailwind CSS
-### ⚡ Backend
-- Node.js
-- Express.js
-### 🤖 AI & NLP
-- LLM (OpenAI / Llama)
-- Embedding Models
-- NLP Pipelines
-### 🗄️ Database
-- MongoDB / PostgreSQL
-- Vector Database (for embeddings)
 
 ---
 
-## 🧩 Core Algorithms
+# 📊 Algorithm Design
 
-### 1️⃣ Skill Extraction
-- NLP-based entity recognition  
-- Converts unstructured resume → structured skills  
+## 🧩 LLM-Based Skill Extraction
+Unstructured Text → Llama 3.3 (70B) → Typed JSON Schema (Skills/Experience)
 
-### 2️⃣ Skill Gap Engine
-- Embedding-based similarity (cosine similarity)  
-- Resume vs Job Description comparison  
+## 📉 Skill Gap Engine
+Required Skills vs Candidate Profile → Semantic Filtering → Prioritized Gap List
 
-### 3️⃣ Adaptive Pathing Algorithm
-- Graph-based learning roadmap  
-- Nodes = skills  
-- Edges = dependencies  
-- Dynamic sequencing based on user level  
-
-### 4️⃣ Personalization Engine
-- Adjusts roadmap duration  
-- Recommends courses dynamically
+## 🧠 Adaptive Roadmap
+Graph-Based Sequence Optimization:
+* Match Match Accuracy Calculation
+* Difficulty-Based Sequencing
+* Learning Resource Mapping
 
 ---
 
-## 📊 Datasets Used
+# 🤖 Tech Stack
 
-- 📁 Resume Dataset (Kaggle)  
-- 📊 O*NET Database  
-- 💼 Jobs & Job Descriptions Dataset (Kaggle)  
+## Frontend & Backend (Unified)
+* **Hono.js:** Lightweight web standards framework.
+* **React:** For interactive UI components.
+* **Vite:** High-performance build system.
 
----
+## AI / Intelligence
+* **Groq Cloud:** High-speed AI inference (Llama-3.3-70b-versatile).
+* **Structured Prompts:** Expertly crafted system prompts for consistent JSON output.
 
-## 📈 Performance Metrics
-
-| Metric                     | Value                     |
-|--------------------------|---------------------------|
-| Skill Match Accuracy     | **87%**                  |
-| Recommendation Precision | **98%**                  |
-| Time Saved               | **~3x faster onboarding** |
-
----
-
-## 🚀 How It Works
-
-1. Upload Resume  
-2. Add Job Description  
-3. AI analyzes skills  
-4. Detects gaps  
-5. Generates roadmap  
+## Infrastructure
+* **Cloudflare Workers / Pages:** Low-latency serverless edge deployment.
+* **Wrangler:** Cloudflare developer CLI.
 
 ---
 
-## 🧪 Future Improvements
+# 📈 Performance Metrics
 
-- 🎓 Integration with real course platforms (Coursera, Udemy)  
-- 📱 Mobile app version  
-- 🧠 Advanced knowledge tracing models  
-- 🤝 Recruiter-side dashboard  
-
----
-
-## 🤝 Contributing
-
-Contributions are welcome!  
-Feel free to fork and improve the project.  
+| Metric | Accuracy / Improvement |
+| :--- | :--- |
+| ⏱ Skill Match Accuracy | **87%** |
+| 🎯 Recommendation Precision | **98%** |
+| 📊 Time Saved | **~3x Faster Growth** |
+| 🧠 Engagement Level | **↑ High** |
 
 ---
 
-## 📄 License
 
-This project is for educational and hackathon purposes.  
 
----
+# 🎥 Demo
 
-## 👨‍💻 Team
-
-**CodeX**  
-Members: Raunak, Ansh, Devisingh, Jay  
+👉 [Watch Video Demo](https://drive.google.com/file/d/1-4jA3cnfqPlOhyGk8sSO7SBi8n3s4PoC/view)
 
 ---
 
-## 🌟 Final Note
+# ⚡ Installation
 
-SkillPath AI is not just a tool — it's a career intelligence engine.
+```bash
+git clone https://github.com/raunak2015/ArtPark-CodeForge-Hackathon
+cd ArtPark-CodeForge-Hackathon
+# Navigate to the app directory
+cd Skill_Path_AI
+npm install
+npm run dev
+```
+
+---
+
+# 🌍 Future Roadmap
+
+* 📊 D1 Database integration for user history tracking.
+* 🎓 Deep integration with real-world Course APIs (Coursera/Udemy).
+* 🧠 Advanced Knowledge Tracing for skill mastery prediction.
+* 📱 Progressive Web App (PWA) for mobile readiness.
+
+---
+
+# 🏆 Why SkillPath AI Stands Out
+
+✔ Modern Tech Stack (Hono + Groq AI)
+✔ State-of-the-Art Speed (Groq Inference)
+✔ High Business Utility for Onboarding
+✔ Clean, Scalable Serverless Infrastructure
+
+---
+
+# 👨💻 Team: CodeX
+
+* **Raunak**
+* **Ansh**
+* **Devisingh**
+* **Jay**
+
+🔗 [GitHub Repository](https://github.com/raunak2015/ArtPark-CodeForge-Hackathon)
+
+---
+
+<div align="center">
+
+✨ Built for Hackathons • Career Development • Real-world Impact ✨
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:00F7FF,100:0072FF&height=140&section=footer"/>
+
+</div>
+
